@@ -1585,7 +1585,7 @@ footer::before {
         Self.
       </h1>
       <p class="hero-sub">
-        Elite personal trainers and fitness coaches rooted in the heart of Saudi Arabia — delivering world-class results through discipline, culture, and cutting-edge science.
+        Elite personal training rooted in Saudi Arabia. Achieve world-class results through custom, culturally conscious coaching.
       </p>
       <div class="hero-actions">
         <a href="#contact" class="btn-primary">
@@ -1655,39 +1655,36 @@ footer::before {
           <em>Spirit of Arabia</em>
         </h2>
         <p class="section-desc reveal reveal-delay-2" style="margin: 22px 0 0;">
-          AlQuwwa (القوة — "The Strength") was founded with one mission: to elevate the health and performance of every Saudi and Gulf national who walks through our doors. We blend world-class training methodology with a deep respect for Saudi values, culture, and community.
-        </p>
-        <p class="section-desc reveal reveal-delay-3" style="margin-top: 14px;">
-          From Riyadh's modern skyline to Jeddah's coastal energy and Dubai's ambition — we are where champions are built.
+          AlQuwwa (القوة) delivers elite personal training tailored to Saudi values. We blend world-class science with cultural respect to build champions in Riyadh, Jeddah, and Dubai.
         </p>
 
         <div class="about-list reveal reveal-delay-4">
           <div class="about-list-item">
             <div class="about-list-icon">🏆</div>
             <div>
-              <div class="about-list-title">Certified Elite Coaches</div>
-              <div class="about-list-desc">NASM, ISSA & ACE certified trainers with international experience</div>
+              <div class="about-list-title">Elite Coaches</div>
+              <div class="about-list-desc">Internationally certified NASM/ACE trainers.</div>
             </div>
           </div>
           <div class="about-list-item">
             <div class="about-list-icon">🕌</div>
             <div>
-              <div class="about-list-title">Culturally Conscious</div>
-              <div class="about-list-desc">Schedules respect prayer times, Ramadan, and Saudi traditions</div>
+              <div class="about-list-title">Cultural Respect</div>
+              <div class="about-list-desc">Schedules fit prayer times and traditions.</div>
             </div>
           </div>
           <div class="about-list-item">
             <div class="about-list-icon">📊</div>
             <div>
-              <div class="about-list-title">Data-Driven Results</div>
-              <div class="about-list-desc">Body composition tracking, biometrics, and performance analytics</div>
+              <div class="about-list-title">Data-Driven</div>
+              <div class="about-list-desc">Precise body tracking and analytics.</div>
             </div>
           </div>
           <div class="about-list-item">
             <div class="about-list-icon">🌴</div>
             <div>
-              <div class="about-list-title">KSA & UAE Coverage</div>
-              <div class="about-list-desc">6 locations across Riyadh, Jeddah, Dammam & Dubai</div>
+              <div class="about-list-title">Premium Gyms</div>
+              <div class="about-list-desc">6 locations across KSA & Dubai.</div>
             </div>
           </div>
         </div>
@@ -1711,7 +1708,7 @@ footer::before {
         </h2>
       </div>
       <p class="section-desc reveal reveal-delay-2">
-        Every program is customised to your body, lifestyle, and goals — structured around your schedule and Saudi cultural context.
+        Custom programs built around your body, goals, and schedule.
       </p>
     </div>
 
@@ -1729,7 +1726,7 @@ footer::before {
           <div class="program-icon">💪</div>
           <span class="program-name-ar">التدريب الشخصي</span>
           <div class="program-name">Personal Training</div>
-          <p class="program-desc">Dedicated 1-on-1 coaching sessions tailored to your unique physiology, goals, and schedule with full accountability.</p>
+          <p class="program-desc">1-on-1 coaching tailored to your unique goals and schedule.</p>
           <span class="program-tag">Most Popular</span>
         </div>
       </div>
@@ -1747,7 +1744,7 @@ footer::before {
           <div class="program-icon">👥</div>
           <span class="program-name-ar">التدريب الجماعي</span>
           <div class="program-name">Group Classes</div>
-          <p class="program-desc">High-energy small-group sessions that build community, competition, and camaraderie among KSA fitness enthusiasts.</p>
+          <p class="program-desc">High-energy sessions building strength and community.</p>
           <span class="program-tag">Community</span>
         </div>
       </div>
@@ -1765,7 +1762,7 @@ footer::before {
           <div class="program-icon">🥗</div>
           <span class="program-name-ar">التغذية الصحية</span>
           <div class="program-name">Nutrition Coaching</div>
-          <p class="program-desc">Certified nutritionists crafting halal-compliant meal plans that fuel performance and align with Saudi cuisine traditions.</p>
+          <p class="program-desc">Halal meal plans designed for elite athletic performance.</p>
           <span class="program-tag">Halal Certified</span>
         </div>
       </div>
@@ -1783,7 +1780,7 @@ footer::before {
           <div class="program-icon">⚡</div>
           <span class="program-name-ar">التدريب النخبة</span>
           <div class="program-name">Elite Performance</div>
-          <p class="program-desc">Advanced athletic coaching for competitive athletes and executives seeking peak performance and elite body composition.</p>
+          <p class="program-desc">Advanced coaching for athletes and high-performing executives.</p>
           <span class="program-tag">Premium</span>
         </div>
       </div>
@@ -1808,7 +1805,7 @@ footer::before {
       </div>
       <div class="reveal reveal-delay-2">
         <p class="section-desc">
-          Each AlQuwwa trainer is hand-selected through a rigorous process — certified internationally, culturally fluent, and deeply committed to your results. They are not just coaches; they are partners in your transformation.
+          Our internationally certified coaches are partners in your strength transformation.
         </p>
         <a href="#contact" class="btn-primary" style="margin-top: 24px; display: inline-flex;">
           <span>Train With Us</span>
@@ -1999,7 +1996,7 @@ footer::before {
           <div class="testi-card">
             <div class="testi-quote-mark">"</div>
             <div class="testi-stars">★★★★★</div>
-            <p class="testi-text">"AlQuwwa completely changed my relationship with fitness. Coach Omar understood my schedule around prayer times and built a program I could actually stick to. In six months, I lost 22kg and gained confidence I didn't know I had."</p>
+            <p class="testi-text">"AlQuwwa changed my life. In six months, I lost 22kg and gained confidence under custom coaching that fits my schedule."</p>
             <div class="testi-author">
               <img class="testi-avatar" src="https://images.unsplash.com/photo-1566492031773-4f4e44671857?w=100&q=80&fit=crop&crop=face" alt="Abdullah M."/>
               <div>
@@ -2014,7 +2011,7 @@ footer::before {
           <div class="testi-card">
             <div class="testi-quote-mark">"</div>
             <div class="testi-stars">★★★★★</div>
-            <p class="testi-text">"As a Saudi woman, finding a coach who respected my values while pushing me to be my best was everything. Sarah's women's program is world-class. I competed in my first fitness event after just one year of training here."</p>
+            <p class="testi-text">"As a Saudi woman, Sarah's program gave me world-class training in an environment that respects my values. Truly exceptional."</p>
             <div class="testi-author">
               <img class="testi-avatar" src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=100&q=80&fit=crop&crop=face" alt="Noura K."/>
               <div>
@@ -2029,7 +2026,7 @@ footer::before {
           <div class="testi-card">
             <div class="testi-quote-mark">"</div>
             <div class="testi-stars">★★★★★</div>
-            <p class="testi-text">"I've worked with trainers in Dubai, London, and New York. AlQuwwa stands above them all. Khalid's performance methodology is elite — he understood exactly what my body needed to reach the next athletic level. Exceptional quality."</p>
+            <p class="testi-text">"Khalid's performance coaching is elite. The quality of personal training here stands above gyms in London or New York."</p>
             <div class="testi-author">
               <img class="testi-avatar" src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=100&q=80&fit=crop&crop=face" alt="Faisal A."/>
               <div>
@@ -2092,7 +2089,7 @@ footer::before {
       is <em>On Us</em>
     </h2>
     <p class="cta-sub">
-      Book your complimentary 60-minute assessment session. No commitment, no pressure — just results.
+      Book your free 60-minute personal coaching session today.
     </p>
     <div class="cta-actions">
       <a href="#contact" class="btn-primary" style="font-size:0.82rem; padding: 18px 44px;">
@@ -2120,7 +2117,7 @@ footer::before {
           Locations<br>Across the <em>Kingdom</em>
         </h2>
         <p class="section-desc reveal reveal-delay-2" style="margin-top:16px;">
-          We operate across six premium locations in Saudi Arabia and the UAE. Walk in, or book online to secure your session.
+          Visit our elite facilities or book online to secure your slot.
         </p>
 
         <div class="contact-cities reveal reveal-delay-3">
@@ -2221,7 +2218,7 @@ footer::before {
         <span class="footer-brand-ar">القوة</span>
         <span class="footer-brand-en">AlQuwwa Elite Fitness</span>
         <p class="footer-tagline">
-          Saudi Arabia's most trusted personal training and fitness coaching brand — built on heritage, excellence, and results.
+          Saudi Arabia's premier personal training brand built on heritage and elite results.
         </p>
         <div class="footer-social">
           <a href="#" aria-label="Instagram">📸</a>
@@ -2620,7 +2617,7 @@ import * as THREE from 'three';
     targetPositions[i * 3]     = dumbbellPositions[i * 3];
     targetPositions[i * 3 + 1] = dumbbellPositions[i * 3 + 1];
     targetPositions[i * 3 + 2] = dumbbellPositions[i * 3 + 2];
-    sizes[i] = 2.0 + Math.random() * 3.0;
+    sizes[i] = 0.5 + Math.random() * 0.8;
     alphas[i] = 0.3 + Math.random() * 0.7;
     randomOffsets[i] = Math.random() * Math.PI * 2;
   }
@@ -2678,8 +2675,8 @@ import * as THREE from 'three';
         vec4 projectedPosition = projectionMatrix * viewPosition;
         gl_Position = projectedPosition;
 
-        // Size attenuation (16.0 instead of 280.0 makes the particles elegant gold dust)
-        float sizeAtten = aSize * uPixelRatio * (16.0 / -viewPosition.z);
+        // Size attenuation (5.0 instead of 280.0 makes the particles a subtle star constellation)
+        float sizeAtten = aSize * uPixelRatio * (5.0 / -viewPosition.z);
         
         // Double pulse heartbeat size modulation (130 BPM = 2.16 Hz, multiply by 2 * PI = 13.6 rad/s)
         float heartbeat = sin(uTime * 13.6) * 0.14 + 0.09 * sin(uTime * 6.8);
@@ -2825,7 +2822,7 @@ import * as THREE from 'three';
   }
 
   // --- Resize handler (width-change locked to optimize mobile scroll performance) ---
-  let lastWidth = window.innerWidth;
+  let lastWidth = -1;
   function resize() {
     const w = window.innerWidth;
     const h = window.innerHeight;
