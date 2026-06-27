@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+  <meta name="theme-color" content="#0A0A0A">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="format-detection" content="telephone=no">
+  <title>JEXA Fitness — Elite Gym in Riyadh | نادي جيكسا للياقة — الرياض</title>
+  <meta name="description" content="JEXA Fitness — Riyadh's premier elite gym. World-class equipment, expert trainers, and a transformative fitness experience. Join the movement today.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons (pinned for brand icon support) -->
+  <script src="https://unpkg.com/lucide@0.394.0/dist/umd/lucide.js"></script>
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <div class="logo-icon">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+            <rect x="2" y="14" width="6" height="8" rx="1.5" fill="#00D26A"/>
+            <rect x="10" y="10" width="6" height="16" rx="1.5" fill="#00D26A"/>
+            <rect x="20" y="10" width="6" height="16" rx="1.5" fill="#00D26A"/>
+            <rect x="28" y="14" width="6" height="8" rx="1.5" fill="#00D26A"/>
+            <rect x="8" y="16" width="20" height="4" rx="1" fill="#00D26A"/>
+          </svg>
+        </div>
+        <span class="logo-text">JEXA</span>
+      </a>
+      
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#programs" data-en="Programs" data-ar="البرامج">Programs</a></li>
+        <li><a href="#trainers" data-en="Trainers" data-ar="المدربين">Trainers</a></li>
+        <li><a href="#pricing" data-en="Pricing" data-ar="الأسعار">Pricing</a></li>
+        <li><a href="#reviews" data-en="Reviews" data-ar="التقييمات">Reviews</a></li>
+        <li><a href="#contact" data-en="Contact" data-ar="تواصل معنا">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="lang-toggle" id="langToggle" onclick="toggleLanguage()">
+          <span class="lang-label" id="langLabel">عربي</span>
+        </button>
+        <a href="#pricing" class="btn btn-primary btn-nav" data-en="Join Now" data-ar="انضم الآن">Join Now</a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" onclick="toggleMobileMenu()">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-gradient"></div>
+      <div class="hero-particles" id="heroParticles"></div>
+    </div>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-badge animate-in" data-en="🏆 #1 Rated Gym in Riyadh" data-ar="🏆 النادي رقم #1 في الرياض">
+          🏆 #1 Rated Gym in Riyadh
+        </div>
+        <h1 class="hero-title animate-in">
+          <span class="hero-title-line" data-en="Forge Your" data-ar="اصنع">Forge Your</span>
+          <span class="hero-title-line hero-title-accent" data-en="Strongest Self" data-ar="أقوى نسخة منك">Strongest Self</span>
+        </h1>
+        <p class="hero-subtitle animate-in" data-en="Riyadh's most elite fitness destination. World-class equipment, champion trainers, and a community that pushes your limits — every single day." data-ar="الوجهة الأولى للّياقة في الرياض. أجهزة عالمية، مدربين أبطال، ومجتمع يدفعك لتتجاوز حدودك — كل يوم.">
+          Riyadh's most elite fitness destination. World-class equipment, champion trainers, and a community that pushes your limits — every single day.
+        </p>
+        <div class="hero-actions animate-in">
+          <a href="#pricing" class="btn btn-primary btn-lg">
+            <span data-en="Start Your Journey" data-ar="ابدأ رحلتك">Start Your Journey</span>
+            <i data-lucide="arrow-right" class="btn-icon"></i>
+          </a>
+          <a href="#programs" class="btn btn-ghost btn-lg">
+            <i data-lucide="play-circle" class="btn-icon-left"></i>
+            <span data-en="Explore Programs" data-ar="استكشف البرامج">Explore Programs</span>
+          </a>
+        </div>
+        <div class="hero-stats animate-in">
+          <div class="hero-stat">
+            <span class="hero-stat-number" data-count="2500">0</span><span class="hero-stat-plus">+</span>
+            <span class="hero-stat-label" data-en="Active Members" data-ar="عضو نشط">Active Members</span>
+          </div>
+          <div class="hero-stat-divider"></div>
+          <div class="hero-stat">
+            <span class="hero-stat-number" data-count="50">0</span><span class="hero-stat-plus">+</span>
+            <span class="hero-stat-label" data-en="Expert Trainers" data-ar="مدرب محترف">Expert Trainers</span>
+          </div>
+          <div class="hero-stat-divider"></div>
+          <div class="hero-stat">
+            <span class="hero-stat-number" data-count="15">0</span>
+            <span class="hero-stat-label" data-en="Years of Excellence" data-ar="سنة من التميز">Years of Excellence</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual animate-in">
+        <div class="hero-image-wrapper">
+          <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&q=85" alt="Elite gym interior" class="hero-image" loading="eager">
+          <div class="hero-image-glow"></div>
+        </div>
+        <div class="hero-floating-card card-1">
+          <div class="floating-card-icon"><i data-lucide="flame"></i></div>
+          <div>
+            <span class="floating-card-value">847</span>
+            <span class="floating-card-label" data-en="Avg. Calories Burned" data-ar="متوسط السعرات المحروقة">Avg. Calories Burned</span>
+          </div>
+        </div>
+        <div class="hero-floating-card card-2">
+          <div class="floating-card-icon icon-green"><i data-lucide="trending-up"></i></div>
+          <div>
+            <span class="floating-card-value">98%</span>
+            <span class="floating-card-label" data-en="Member Satisfaction" data-ar="رضا الأعضاء">Member Satisfaction</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-dot"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TRUSTED BY / BRANDS ==================== -->
+  <section class="brands-section">
+    <div class="container">
+      <p class="brands-label" data-en="Trusted by Leading Brands in Saudi Arabia" data-ar="موثوق من قبل أبرز العلامات التجارية في المملكة">Trusted by Leading Brands in Saudi Arabia</p>
+      <div class="brands-track">
+        <div class="brands-slide">
+          <div class="brand-item">ARAMCO</div>
+          <div class="brand-item">STC</div>
+          <div class="brand-item">SABIC</div>
+          <div class="brand-item">NEOM</div>
+          <div class="brand-item">Red Sea Global</div>
+          <div class="brand-item">Saudi Vision 2030</div>
+          <div class="brand-item">ARAMCO</div>
+          <div class="brand-item">STC</div>
+          <div class="brand-item">SABIC</div>
+          <div class="brand-item">NEOM</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PROGRAMS SECTION ==================== -->
+  <section class="programs-section section" id="programs">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-en="Our Programs" data-ar="برامجنا">Our Programs</span>
+        <h2 class="section-title" data-en="Find Your Perfect Workout" data-ar="اكتشف تمرينك المثالي">Find Your Perfect Workout</h2>
+        <p class="section-subtitle" data-en="From high-intensity training to mindful recovery, our programs are designed to transform your body and mind." data-ar="من التمارين عالية الكثافة إلى التعافي الذهني، برامجنا مصممة لتحويل جسمك وعقلك.">From high-intensity training to mindful recovery, our programs are designed to transform your body and mind.</p>
+      </div>
+      <div class="programs-grid">
+        <!-- Program Card 1 -->
+        <div class="program-card" data-aos="fade-up">
+          <div class="program-card-image">
+            <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=600&q=80" alt="Strength Training" loading="lazy">
+            <div class="program-card-overlay"></div>
+            <span class="program-card-tag" data-en="Most Popular" data-ar="الأكثر شعبية">Most Popular</span>
+          </div>
+          <div class="program-card-body">
+            <div class="program-card-icon"><i data-lucide="dumbbell"></i></div>
+            <h3 data-en="Strength & Power" data-ar="القوة والتحمّل">Strength & Power</h3>
+            <p data-en="Build raw strength with our championship-level powerlifting and bodybuilding programs." data-ar="ابنِ قوة حقيقية مع برامج رفع الأثقال وبناء الأجسام على مستوى البطولات.">Build raw strength with our championship-level powerlifting and bodybuilding programs.</p>
+            <div class="program-card-meta">
+              <span><i data-lucide="clock"></i> <span data-en="60 min" data-ar="60 دقيقة">60 min</span></span>
+              <span><i data-lucide="zap"></i> <span data-en="High Intensity" data-ar="كثافة عالية">High Intensity</span></span>
+            </div>
+          </div>
+        </div>
+        <!-- Program Card 2 -->
+        <div class="program-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="program-card-image">
+            <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=600&q=80" alt="HIIT Training" loading="lazy">
+            <div class="program-card-overlay"></div>
+          </div>
+          <div class="program-card-body">
+            <div class="program-card-icon"><i data-lucide="flame"></i></div>
+            <h3 data-en="HIIT & Cardio Blast" data-ar="تمارين الكارديو المكثفة">HIIT & Cardio Blast</h3>
+            <p data-en="Torch calories and boost endurance with our explosive interval training sessions." data-ar="احرق السعرات وعزّز قدرتك على التحمّل مع جلسات التمارين المتقطعة.">Torch calories and boost endurance with our explosive interval training sessions.</p>
+            <div class="program-card-meta">
+              <span><i data-lucide="clock"></i> <span data-en="45 min" data-ar="45 دقيقة">45 min</span></span>
+              <span><i data-lucide="zap"></i> <span data-en="Extreme" data-ar="متقدم">Extreme</span></span>
+            </div>
+          </div>
+        </div>
+        <!-- Program Card 3 -->
+        <div class="program-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="program-card-image">
+            <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?w=600&q=80" alt="CrossFit" loading="lazy">
+            <div class="program-card-overlay"></div>
+          </div>
+          <div class="program-card-body">
+            <div class="program-card-icon"><i data-lucide="trophy"></i></div>
+            <h3 data-en="Functional CrossFit" data-ar="كروس فت الوظيفي">Functional CrossFit</h3>
+            <p data-en="Challenge every muscle with dynamic, functional movements that build real-world athleticism." data-ar="تحدّ كل عضلة بحركات ديناميكية تبني لياقة حقيقية تنعكس على حياتك اليومية.">Challenge every muscle with dynamic, functional movements that build real-world athleticism.</p>
+            <div class="program-card-meta">
+              <span><i data-lucide="clock"></i> <span data-en="50 min" data-ar="50 دقيقة">50 min</span></span>
+              <span><i data-lucide="zap"></i> <span data-en="All Levels" data-ar="جميع المستويات">All Levels</span></span>
+            </div>
+          </div>
+        </div>
+        <!-- Program Card 4 -->
+        <div class="program-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="program-card-image">
+            <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&q=80" alt="Personal Training" loading="lazy">
+            <div class="program-card-overlay"></div>
+            <span class="program-card-tag tag-new" data-en="New" data-ar="جديد">New</span>
+          </div>
+          <div class="program-card-body">
+            <div class="program-card-icon"><i data-lucide="user-check"></i></div>
+            <h3 data-en="1-on-1 Coaching" data-ar="تدريب شخصي">1-on-1 Coaching</h3>
+            <p data-en="Personalized plans crafted by elite trainers to accelerate your unique fitness goals." data-ar="خطط مخصصة من مدربين نخبة لتسريع تحقيق أهدافك الخاصة.">Personalized plans crafted by elite trainers to accelerate your unique fitness goals.</p>
+            <div class="program-card-meta">
+              <span><i data-lucide="clock"></i> <span data-en="60 min" data-ar="60 دقيقة">60 min</span></span>
+              <span><i data-lucide="zap"></i> <span data-en="Custom" data-ar="مخصص">Custom</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FEATURES / WHY US ==================== -->
+  <section class="features-section section">
+    <div class="container">
+      <div class="features-layout">
+        <div class="features-left">
+          <span class="section-tag" data-en="Why JEXA" data-ar="لماذا جيكسا">Why JEXA</span>
+          <h2 class="section-title" data-en="More Than Just a Gym" data-ar="أكثر من مجرد نادي">More Than Just a Gym</h2>
+          <p class="features-desc" data-en="We've built a complete fitness ecosystem where cutting-edge technology meets world-class expertise. Every detail is designed to maximize your results." data-ar="بنينا منظومة لياقة متكاملة تجمع بين أحدث التقنيات وخبرات عالمية. كل تفصيلة مصممة لتحقيق أقصى نتائج لك.">We've built a complete fitness ecosystem where cutting-edge technology meets world-class expertise. Every detail is designed to maximize your results.</p>
+          
+          <div class="features-list">
+            <div class="feature-item">
+              <div class="feature-icon"><i data-lucide="shield-check"></i></div>
+              <div>
+                <h4 data-en="Premium Equipment" data-ar="أجهزة فاخرة">Premium Equipment</h4>
+                <p data-en="Technogym & Life Fitness machines, imported directly from Italy and the USA." data-ar="أجهزة تكنو جيم ولايف فتنس المستوردة مباشرة من إيطاليا وأمريكا.">Technogym & Life Fitness machines, imported directly from Italy and the USA.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon"><i data-lucide="sparkles"></i></div>
+              <div>
+                <h4 data-en="Smart Recovery Zone" data-ar="منطقة التعافي الذكية">Smart Recovery Zone</h4>
+                <p data-en="Cryotherapy, infrared saunas, and massage guns — science-backed recovery." data-ar="علاج بالتبريد، ساونا بالأشعة تحت الحمراء، ومسدسات التدليك — تعافي مبني على العلم.">Cryotherapy, infrared saunas, and massage guns — science-backed recovery.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon"><i data-lucide="salad"></i></div>
+              <div>
+                <h4 data-en="Nutrition Bar & Plans" data-ar="بار التغذية وخطط الأكل">Nutrition Bar & Plans</h4>
+                <p data-en="In-house nutrition bar with protein shakes and customized meal plans by dietitians." data-ar="بار تغذية داخلي مع بروتين شيك وخطط وجبات مخصصة من أخصائيي تغذية.">In-house nutrition bar with protein shakes and customized meal plans by dietitians.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon"><i data-lucide="clock"></i></div>
+              <div>
+                <h4 data-en="24/7 Open Access" data-ar="مفتوح 24 ساعة">24/7 Open Access</h4>
+                <p data-en="Train anytime, day or night. Your schedule, your rules." data-ar="تدرّب في أي وقت، ليل أو نهار. جدولك، قواعدك.">Train anytime, day or night. Your schedule, your rules.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="features-right">
+          <div class="features-image-grid">
+            <div class="features-img-main">
+              <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=600&q=80" alt="Modern gym equipment" loading="lazy">
+            </div>
+            <div class="features-img-secondary">
+              <img src="https://images.unsplash.com/photo-1593079831268-3381b0db4a77?w=400&q=80" alt="Recovery zone" loading="lazy">
+            </div>
+            <div class="features-img-tertiary">
+              <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=400&q=80" alt="Group fitness" loading="lazy">
+            </div>
+            <div class="features-stats-card">
+              <div class="stat-ring">
+                <svg viewBox="0 0 100 100">
+                  <circle cx="50" cy="50" r="42" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="6"/>
+                  <circle cx="50" cy="50" r="42" fill="none" stroke="#00D26A" stroke-width="6" stroke-dasharray="264" stroke-dashoffset="26" stroke-linecap="round" transform="rotate(-90 50 50)"/>
+                </svg>
+                <span class="stat-ring-value">90%</span>
+              </div>
+              <p data-en="Members achieve their goals within 3 months" data-ar="من الأعضاء يحققون أهدافهم خلال 3 أشهر">Members achieve their goals within 3 months</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TRAINERS SECTION ==================== -->
+  <section class="trainers-section section" id="trainers">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-en="Meet the Team" data-ar="فريقنا">Meet the Team</span>
+        <h2 class="section-title" data-en="Elite Certified Trainers" data-ar="مدربون معتمدون من النخبة">Elite Certified Trainers</h2>
+        <p class="section-subtitle" data-en="Our trainers are handpicked champions — certified, experienced, and passionate about your transformation." data-ar="مدربونا أبطال مختارون بعناية — معتمدون، ذوو خبرة، وشغوفون بتحوّلك.">Our trainers are handpicked champions — certified, experienced, and passionate about your transformation.</p>
+      </div>
+      <div class="trainers-grid">
+        <div class="trainer-card">
+          <div class="trainer-image">
+            <img src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?w=400&q=80" alt="Coach Ahmed" loading="lazy">
+            <div class="trainer-overlay">
+              <div class="trainer-socials">
+                <a href="#"><i data-lucide="instagram"></i></a>
+                <a href="#"><i data-lucide="twitter"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="trainer-info">
+            <h4 data-en="Ahmed Al-Rashid" data-ar="أحمد الراشد">Ahmed Al-Rashid</h4>
+            <span data-en="Strength & Conditioning" data-ar="قوة وتكييف">Strength & Conditioning</span>
+            <div class="trainer-badges">
+              <span class="badge">NASM</span>
+              <span class="badge">CSCS</span>
+            </div>
+          </div>
+        </div>
+        <div class="trainer-card">
+          <div class="trainer-image">
+            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&q=80" alt="Coach Sara" loading="lazy">
+            <div class="trainer-overlay">
+              <div class="trainer-socials">
+                <a href="#"><i data-lucide="instagram"></i></a>
+                <a href="#"><i data-lucide="twitter"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="trainer-info">
+            <h4 data-en="Sara Al-Otaibi" data-ar="سارة العتيبي">Sara Al-Otaibi</h4>
+            <span data-en="HIIT & Functional" data-ar="تمارين مكثفة ووظيفية">HIIT & Functional</span>
+            <div class="trainer-badges">
+              <span class="badge">ACE</span>
+              <span class="badge">CrossFit L2</span>
+            </div>
+          </div>
+        </div>
+        <div class="trainer-card">
+          <div class="trainer-image">
+            <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=400&q=80" alt="Coach Khalid" loading="lazy">
+            <div class="trainer-overlay">
+              <div class="trainer-socials">
+                <a href="#"><i data-lucide="instagram"></i></a>
+                <a href="#"><i data-lucide="twitter"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="trainer-info">
+            <h4 data-en="Khalid Al-Dosari" data-ar="خالد الدوسري">Khalid Al-Dosari</h4>
+            <span data-en="Boxing & MMA" data-ar="ملاكمة وفنون قتالية">Boxing & MMA</span>
+            <div class="trainer-badges">
+              <span class="badge">ISSA</span>
+              <span class="badge">Boxing Pro</span>
+            </div>
+          </div>
+        </div>
+        <div class="trainer-card">
+          <div class="trainer-image">
+            <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?w=400&q=80" alt="Coach Noura" loading="lazy">
+            <div class="trainer-overlay">
+              <div class="trainer-socials">
+                <a href="#"><i data-lucide="instagram"></i></a>
+                <a href="#"><i data-lucide="twitter"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="trainer-info">
+            <h4 data-en="Noura Al-Shammari" data-ar="نورة الشمّري">Noura Al-Shammari</h4>
+            <span data-en="Yoga & Recovery" data-ar="يوغا وتعافي">Yoga & Recovery</span>
+            <div class="trainer-badges">
+              <span class="badge">RYT 500</span>
+              <span class="badge">Pilates</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PRICING SECTION ==================== -->
+  <section class="pricing-section section" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-en="Membership Plans" data-ar="خطط العضوية">Membership Plans</span>
+        <h2 class="section-title" data-en="Invest in Your Best Self" data-ar="استثمر في أفضل نسخة منك">Invest in Your Best Self</h2>
+        <p class="section-subtitle" data-en="Transparent pricing with no hidden fees. Choose the plan that matches your ambition." data-ar="أسعار شفافة بدون رسوم مخفية. اختر الخطة اللي تناسب طموحك.">Transparent pricing with no hidden fees. Choose the plan that matches your ambition.</p>
+      </div>
+
+      <div class="pricing-toggle">
+        <span class="toggle-label active" data-en="Monthly" data-ar="شهري" id="monthlyLabel">Monthly</span>
+        <button class="toggle-switch" id="pricingToggle" onclick="togglePricing()">
+          <span class="toggle-knob"></span>
+        </button>
+        <span class="toggle-label" data-en="Yearly" data-ar="سنوي" id="yearlyLabel">Yearly</span>
+        <span class="toggle-save" data-en="Save 25%" data-ar="وفّر 25%">Save 25%</span>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Basic Plan -->
+        <div class="pricing-card">
+          <div class="pricing-card-header">
+            <span class="pricing-tier" data-en="Starter" data-ar="المبتدئ">Starter</span>
+            <div class="pricing-amount">
+              <span class="pricing-currency" data-en="SAR" data-ar="ر.س">SAR</span>
+              <span class="pricing-value monthly-price">199</span>
+              <span class="pricing-value yearly-price" style="display:none">149</span>
+              <span class="pricing-period" data-en="/month" data-ar="/شهر">/month</span>
+            </div>
+            <p class="pricing-desc" data-en="Perfect for beginners ready to start their fitness journey." data-ar="مثالية للمبتدئين الجاهزين يبدأون رحلتهم.">Perfect for beginners ready to start their fitness journey.</p>
+          </div>
+          <ul class="pricing-features">
+            <li><i data-lucide="check"></i> <span data-en="Full gym access" data-ar="دخول كامل للنادي">Full gym access</span></li>
+            <li><i data-lucide="check"></i> <span data-en="Locker & shower" data-ar="خزانة ودش">Locker & shower</span></li>
+            <li><i data-lucide="check"></i> <span data-en="Free WiFi" data-ar="واي فاي مجاني">Free WiFi</span></li>
+            <li><i data-lucide="check"></i> <span data-en="Fitness assessment" data-ar="تقييم لياقة">Fitness assessment</span></li>
+            <li class="disabled"><i data-lucide="x"></i> <span data-en="Group classes" data-ar="حصص جماعية">Group classes</span></li>
+            <li class="disabled"><i data-lucide="x"></i> <span data-en="Personal trainer" data-ar="مدرب شخصي">Personal trainer</span></li>
+          </ul>
+          <a href="#contact" class="btn btn-outline btn-block" data-en="Get Started" data-ar="ابدأ الآن">Get Started</a>
+        </div>
+
+        <!-- Pro Plan -->
+        <div class="pricing-card pricing-card-featured">
+          <div class="pricing-badge" data-en="Best Value" data-ar="الأفضل قيمة">Best Value</div>
+          <div class="pricing-card-header">
+            <span class="pricing-tier" data-en="Pro" data-ar="المحترف">Pro</span>
+            <div class="pricing-amount">
+              <span class="pricing-currency" data-en="SAR" data-ar="ر.س">SAR</span>
+              <span class="pricing-value monthly-price">349</span>
+              <span class="pricing-value yearly-price" style="display:none">262</span>
+              <span class="pricing-period" data-en="/month" data-ar="/شهر">/month</span>
+            </div>
+            <p class="pricing-desc" data-en="For dedicated athletes who want the complete experience." data-ar="للرياضيين الملتزمين اللي يبغون التجربة الكاملة.">For dedicated athletes who want the complete experience.</p>
+          </div>
+          <ul class="pricing-features">
+            <li><i data-lucide="check"></i> <span data-en="Everything in Starter" data-ar="كل مزايا المبتدئ">Everything in Starter</span></li>
+            <li><i data-lucide="check"></i> <span data-en="Unlimited group classes" data-ar="حصص جماعية غير محدودة">Unlimited group classes</span></li>
+            <li><i data-lucide="check"></i> <span data-en="Recovery zone access" data-ar="دخول منطقة التعافي">Recovery zone access</span></li>
+            <li><i data-lucide="check"></i> <span data-en="2 PT sessions/month" data-ar="جلستين تدريب شخصي/شهر">2 PT sessions/month</span></li>
+            <li><i data-lucide="check"></i> <span data-en="Nutrition plan" data-ar="خطة تغذية">Nutrition plan</span></li>
+            <li class="disabled"><i data-lucide="x"></i> <span data-en="Unlimited PT sessions" data-ar="جلسات شخصية غير محدودة">Unlimited PT sessions</span></li>
+          </ul>
+          <a href="#contact" class="btn btn-primary btn-block" data-en="Get Started" data-ar="ابدأ الآن">Get Started</a>
+        </div>
+
+        <!-- Elite Plan -->
+        <div class="pricing-card">
+          <div class="pricing-card-header">
+            <span class="pricing-tier" data-en="Elite" data-ar="النخبة">Elite</span>
+            <div class="pricing-amount">
+              <span class="pricing-currency" data-en="SAR" data-ar="ر.س">SAR</span>
+              <span class="pricing-value monthly-price">599</span>
+              <span class="pricing-value yearly-price" style="display:none">449</span>
+              <span class="pricing-period" data-en="/month" data-ar="/شهر">/month</span>
+            </div>
+            <p class="pricing-desc" data-en="The ultimate VIP fitness experience. No limits." data-ar="تجربة لياقة VIP بدون حدود.">The ultimate VIP fitness experience. No limits.</p>
+          </div>
+          <ul class="pricing-features">
+            <li><i data-lucide="check"></i> <span data-en="Everything in Pro" data-ar="كل مزايا المحترف">Everything in Pro</span></li>
+            <li><i data-lucide="check"></i> <span data-en="Unlimited PT sessions" data-ar="جلسات شخصية غير محدودة">Unlimited PT sessions</span></li>
+            <li><i data-lucide="check"></i> <span data-en="VIP locker room" data-ar="غرفة خلع ملابس VIP">VIP locker room</span></li>
+            <li><i data-lucide="check"></i> <span data-en="Cryo & sauna access" data-ar="دخول التبريد والساونا">Cryo & sauna access</span></li>
+            <li><i data-lucide="check"></i> <span data-en="Priority booking" data-ar="حجز بأولوية">Priority booking</span></li>
+            <li><i data-lucide="check"></i> <span data-en="Guest passes (2/month)" data-ar="بطاقات ضيوف (2/شهر)">Guest passes (2/month)</span></li>
+          </ul>
+          <a href="#contact" class="btn btn-outline btn-block" data-en="Get Started" data-ar="ابدأ الآن">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TESTIMONIALS / REVIEWS ==================== -->
+  <section class="reviews-section section" id="reviews">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-en="Real Results" data-ar="نتائج حقيقية">Real Results</span>
+        <h2 class="section-title" data-en="What Our Members Say" data-ar="ايش يقولون أعضاؤنا">What Our Members Say</h2>
+        <p class="section-subtitle" data-en="Don't take our word for it — hear from the people who transformed their lives with JEXA." data-ar="لا تاخذ كلامنا — اسمع من الناس اللي غيّروا حياتهم مع جيكسا.">Don't take our word for it — hear from the people who transformed their lives with JEXA.</p>
+      </div>
+      <div class="reviews-carousel" id="reviewsCarousel">
+        <div class="reviews-track" id="reviewsTrack">
+          <!-- Review 1 -->
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text" data-en="\"JEXA completely transformed my fitness journey. The trainers are incredibly knowledgeable and the equipment is world-class. I've lost 25kg in 6 months!\"" data-ar="\"جيكسا غيّر رحلة لياقتي بالكامل. المدربين عندهم خبرة خرافية والأجهزة مستوى عالمي. نزلت 25 كيلو في 6 شهور!\"">"JEXA completely transformed my fitness journey. The trainers are incredibly knowledgeable and the equipment is world-class. I've lost 25kg in 6 months!"</p>
+            <div class="review-author">
+              <div class="review-avatar">ف</div>
+              <div>
+                <h5 data-en="Fahad Al-Mutairi" data-ar="فهد المطيري">Fahad Al-Mutairi</h5>
+                <span data-en="Member for 2 years" data-ar="عضو من سنتين">Member for 2 years</span>
+              </div>
+            </div>
+          </div>
+          <!-- Review 2 -->
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text" data-en="\"The women's section is amazing — private, clean, and fully equipped. Coach Noura's yoga classes are the highlight of my week. Best gym in Riyadh, hands down.\"" data-ar="\"قسم السيدات خرافي — خصوصية، نظافة، وتجهيز كامل. حصص اليوغا مع المدربة نورة أحلى شي في أسبوعي. أفضل نادي في الرياض بدون منافس.\"">"The women's section is amazing — private, clean, and fully equipped. Coach Noura's yoga classes are the highlight of my week. Best gym in Riyadh, hands down."</p>
+            <div class="review-author">
+              <div class="review-avatar avatar-pink">ل</div>
+              <div>
+                <h5 data-en="Lama Al-Harbi" data-ar="لمى الحربي">Lama Al-Harbi</h5>
+                <span data-en="Member for 1 year" data-ar="عضوة من سنة">Member for 1 year</span>
+              </div>
+            </div>
+          </div>
+          <!-- Review 3 -->
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text" data-en="\"As a professional athlete, I need a gym that matches my standards. JEXA delivers on every level — the recovery zone alone is worth the membership.\"" data-ar="\"كرياضي محترف، أحتاج نادي على مستوى طموحي. جيكسا يحقق كل اللي أبيه — منطقة التعافي لحالها تستاهل الاشتراك.\"">"As a professional athlete, I need a gym that matches my standards. JEXA delivers on every level — the recovery zone alone is worth the membership."</p>
+            <div class="review-author">
+              <div class="review-avatar avatar-blue">ع</div>
+              <div>
+                <h5 data-en="Omar Al-Qahtani" data-ar="عمر القحطاني">Omar Al-Qahtani</h5>
+                <span data-en="Pro Athlete" data-ar="رياضي محترف">Pro Athlete</span>
+              </div>
+            </div>
+          </div>
+          <!-- Review 4 -->
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text" data-en="\"I tried every gym in Riyadh before finding JEXA. The atmosphere, the community, and the results speak for themselves. 10/10 recommend!\"" data-ar="\"جربت كل الأندية في الرياض قبل ما ألاقي جيكسا. الأجواء، المجتمع، والنتائج تتكلم عن نفسها. أنصح فيه 10 من 10!\"">"I tried every gym in Riyadh before finding JEXA. The atmosphere, the community, and the results speak for themselves. 10/10 recommend!"</p>
+            <div class="review-author">
+              <div class="review-avatar avatar-purple">ت</div>
+              <div>
+                <h5 data-en="Turki Al-Dossary" data-ar="تركي الدوسري">Turki Al-Dossary</h5>
+                <span data-en="Member for 3 years" data-ar="عضو من 3 سنوات">Member for 3 years</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reviews-nav">
+          <button class="review-nav-btn" onclick="scrollReviews(-1)"><i data-lucide="chevron-left"></i></button>
+          <button class="review-nav-btn" onclick="scrollReviews(1)"><i data-lucide="chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CTA BANNER ==================== -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-card">
+        <div class="cta-bg-elements">
+          <div class="cta-circle cta-circle-1"></div>
+          <div class="cta-circle cta-circle-2"></div>
+        </div>
+        <div class="cta-content">
+          <h2 data-en="Ready to Transform Your Body?" data-ar="مستعد تغيّر جسمك؟">Ready to Transform Your Body?</h2>
+          <p data-en="Join JEXA today and get your first week FREE. No contracts, no commitments — just results." data-ar="انضم لجيكسا اليوم واحصل على أول أسبوع مجاناً. بدون عقود، بدون التزامات — بس نتائج.">Join JEXA today and get your first week FREE. No contracts, no commitments — just results.</p>
+          <div class="cta-actions">
+            <a href="#contact" class="btn btn-white btn-lg">
+              <span data-en="Claim Free Week" data-ar="احصل على أسبوعك المجاني">Claim Free Week</span>
+              <i data-lucide="arrow-right" class="btn-icon"></i>
+            </a>
+            <a href="tel:+966501234567" class="btn btn-ghost-white btn-lg">
+              <i data-lucide="phone" class="btn-icon-left"></i>
+              <span data-en="Call Us Now" data-ar="اتصل الآن">Call Us Now</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT / MAP SECTION ==================== -->
+  <section class="contact-section section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-en="Get in Touch" data-ar="تواصل معنا">Get in Touch</span>
+        <h2 class="section-title" data-en="Visit Us in Riyadh" data-ar="زورنا في الرياض">Visit Us in Riyadh</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-form-wrapper">
+          <form class="contact-form" onsubmit="handleFormSubmit(event)">
+            <div class="form-group">
+              <label data-en="Full Name" data-ar="الاسم الكامل">Full Name</label>
+              <input type="text" placeholder="" required id="contactName">
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label data-en="Email" data-ar="البريد الإلكتروني">Email</label>
+                <input type="email" required id="contactEmail">
+              </div>
+              <div class="form-group">
+                <label data-en="Phone" data-ar="رقم الجوال">Phone</label>
+                <input type="tel" placeholder="+966" id="contactPhone">
+              </div>
+            </div>
+            <div class="form-group">
+              <label data-en="Interested Plan" data-ar="الخطة المهتم فيها">Interested Plan</label>
+              <select id="contactPlan">
+                <option value="starter" data-en="Starter — 199 SAR/mo" data-ar="المبتدئ — 199 ر.س/شهر">Starter — 199 SAR/mo</option>
+                <option value="pro" selected data-en="Pro — 349 SAR/mo" data-ar="المحترف — 349 ر.س/شهر">Pro — 349 SAR/mo</option>
+                <option value="elite" data-en="Elite — 599 SAR/mo" data-ar="النخبة — 599 ر.س/شهر">Elite — 599 SAR/mo</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label data-en="Message (Optional)" data-ar="رسالتك (اختياري)">Message (Optional)</label>
+              <textarea rows="3" id="contactMessage"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block btn-lg">
+              <span data-en="Send Message" data-ar="أرسل الرسالة">Send Message</span>
+              <i data-lucide="send" class="btn-icon"></i>
+            </button>
+          </form>
+        </div>
+        <div class="contact-info-wrapper">
+          <div class="contact-info-card">
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><i data-lucide="map-pin"></i></div>
+              <div>
+                <h4 data-en="Location" data-ar="الموقع">Location</h4>
+                <p data-en="King Fahd Road, Al Olaya District, Riyadh 12211" data-ar="طريق الملك فهد، حي العليا، الرياض 12211">King Fahd Road, Al Olaya District, Riyadh 12211</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><i data-lucide="phone"></i></div>
+              <div>
+                <h4 data-en="Phone" data-ar="الهاتف">Phone</h4>
+                <p dir="ltr">+966 50 123 4567</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><i data-lucide="mail"></i></div>
+              <div>
+                <h4 data-en="Email" data-ar="البريد">Email</h4>
+                <p>info@jexafitness.sa</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><i data-lucide="clock"></i></div>
+              <div>
+                <h4 data-en="Working Hours" data-ar="ساعات العمل">Working Hours</h4>
+                <p data-en="Open 24/7 — Never Closed" data-ar="مفتوح 24 ساعة — ما نسكر أبداً">Open 24/7 — Never Closed</p>
+              </div>
+            </div>
+          </div>
+          <div class="contact-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3624.674912742!2d46.6828!3d24.7136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDQyJzQ5LjAiTiA0NsKwNDAnNTguMSJF!5e0!3m2!1sen!2ssa!4v1700000000000!5m2!1sen!2ssa" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <div class="logo-icon">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+                <rect x="2" y="14" width="6" height="8" rx="1.5" fill="#00D26A"/>
+                <rect x="10" y="10" width="6" height="16" rx="1.5" fill="#00D26A"/>
+                <rect x="20" y="10" width="6" height="16" rx="1.5" fill="#00D26A"/>
+                <rect x="28" y="14" width="6" height="8" rx="1.5" fill="#00D26A"/>
+                <rect x="8" y="16" width="20" height="4" rx="1" fill="#00D26A"/>
+              </svg>
+            </div>
+            <span class="logo-text">JEXA</span>
+          </a>
+          <p class="footer-tagline" data-en="Riyadh's premier destination for elite fitness. Transform your body, elevate your mind." data-ar="الوجهة الأولى للياقة في الرياض. حوّل جسمك، وارتقِ بعقلك.">Riyadh's premier destination for elite fitness. Transform your body, elevate your mind.</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a>
+            <a href="#" aria-label="Twitter"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg></a>
+            <a href="#" aria-label="Youtube"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></svg></a>
+            <a href="#" aria-label="TikTok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-links-col">
+          <h4 data-en="Quick Links" data-ar="روابط سريعة">Quick Links</h4>
+          <ul>
+            <li><a href="#programs" data-en="Programs" data-ar="البرامج">Programs</a></li>
+            <li><a href="#trainers" data-en="Trainers" data-ar="المدربين">Trainers</a></li>
+            <li><a href="#pricing" data-en="Pricing" data-ar="الأسعار">Pricing</a></li>
+            <li><a href="#reviews" data-en="Reviews" data-ar="التقييمات">Reviews</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4 data-en="Support" data-ar="الدعم">Support</h4>
+          <ul>
+            <li><a href="#" data-en="Help Center" data-ar="مركز المساعدة">Help Center</a></li>
+            <li><a href="#" data-en="Terms of Service" data-ar="شروط الخدمة">Terms of Service</a></li>
+            <li><a href="#" data-en="Privacy Policy" data-ar="سياسة الخصوصية">Privacy Policy</a></li>
+            <li><a href="#contact" data-en="Contact Us" data-ar="تواصل معنا">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4 data-en="Download App" data-ar="حمّل التطبيق">Download App</h4>
+          <div class="app-buttons">
+            <a href="#" class="app-btn">
+              <i data-lucide="smartphone"></i>
+              <div>
+                <small data-en="Get it on" data-ar="حمّله من">Get it on</small>
+                <span>Google Play</span>
+              </div>
+            </a>
+            <a href="#" class="app-btn">
+              <i data-lucide="smartphone"></i>
+              <div>
+                <small data-en="Download on" data-ar="حمّله من">Download on</small>
+                <span>App Store</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-en="© 2026 JEXA Fitness. All rights reserved. Made with 💚 in Riyadh, Saudi Arabia." data-ar="© 2026 جيكسا للياقة. جميع الحقوق محفوظة. صُنع بـ 💚 في الرياض، المملكة العربية السعودية.">© 2026 JEXA Fitness. All rights reserved. Made with 💚 in Riyadh, Saudi Arabia.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== WHATSAPP FAB ==================== -->
+  <a href="https://wa.me/966501234567" target="_blank" class="whatsapp-fab" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="white" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
